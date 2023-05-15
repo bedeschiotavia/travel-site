@@ -1,0 +1,27 @@
+.primary-nav {
+    
+    &--pull-right {
+        float: right;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        /*Mixin Clear fix*/
+        content: "";
+        clear:both;
+        display: table;
+    }
+
+    li {
+        list-style: none;
+        float:left;
+        padding: 12px 20px 0 0;
+    }
+
+    a {
+        color:#fff;
+        text-decoration: none;
+        font-weight: 300;
+    }
+}
