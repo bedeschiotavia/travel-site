@@ -6,22 +6,9 @@
         padding-top: 0;
     }
 
-    &--pull-right {
-        @mixin atMedium {
-            float: right;
-        }
-
-    }
-
     ul {
         margin: 0;
         padding: 0;
-        /*Mixin Clear fix*/
-        content: "";
-        clear:both;
-        @mixin atMedium {
-            display: table;
-        }
 
     }
 
@@ -32,8 +19,6 @@
         @mixin atMedium {
             padding-right: 20px;
             padding-top: 10px;
-            float:left;
-            display: block;
         }
     }
 
