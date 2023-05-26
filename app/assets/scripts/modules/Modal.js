@@ -2,16 +2,12 @@ class Modal {
     constructor () {
         this.injectHTML()
         this.modal = document.querySelector (".modal")
-        this.openModalButtons = document.querySelectorAll(".open-modal")
         this.closeModalButtons = document.querySelectorAll(".close-modal")
         this.events()
 
     }
 
     events () {
-        //listen for open click
-        this.openModalButtons.forEach(el => el.addEventListener("click", e => this.openTheModal(e)))
-        
         //listen for close click
         this.closeModalButtons.forEach(el => el.addEventListener("click", e => this.closeTheModal(e)))
         
@@ -20,12 +16,11 @@ class Modal {
 
     }
 
-    openTheModal (e) {
-        e.preventDefault()
+    openTheModal () {
         this.modal.classList.add("modal--is-visible")
     }
 
-    closeTheModal (e) {
+    closeTheModal () {
         this.modal.classList.remove("modal--is-visible")
     }
 
